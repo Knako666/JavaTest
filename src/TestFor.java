@@ -52,7 +52,7 @@ public class TestFor {
 
             sum += moneyEachDay;
 
-            System.out.println(i + " 天之后，洪帮主手中的钱总数是: " + sum);
+            System.out.println(j + " 天之后，洪帮主手中的钱总数是: " + sum);
         }
     }
 }
