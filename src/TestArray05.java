@@ -4,7 +4,6 @@
  */
 
 import java.lang.Math;
-import java.lang.ArrayIndexOutOfBoundsException;
 public class TestArray05 {
     public static void main(String[] args){
         //把一个数组的值，复制到另一个数组中
