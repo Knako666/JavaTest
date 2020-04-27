@@ -1,6 +1,6 @@
 /**
  * 测试数组--排序
- * @author  HYT
+ * @author  HYTd
  */
 import java.lang.Math;
 public class TestArray03 {
