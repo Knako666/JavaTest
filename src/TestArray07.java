@@ -2,7 +2,7 @@
  * 测试数组--调用JAVA.UTIL.ARRAYS类
  * @author  HYT
  */
-import java.lang.reflect.Array;
+
 import java.util.Arrays;
 import java.lang.Math;
 public class TestArray07 {
