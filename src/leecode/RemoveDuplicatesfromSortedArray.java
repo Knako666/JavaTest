@@ -1,6 +1,6 @@
 /**
  * LeetCode_数组_删除排序数组中的重复项
- * @author HYT
+ * @author HYTg
  */
 package leecode;
 import java.util.Arrays;
