@@ -65,6 +65,13 @@ class Hero {
     float armor; //护甲
 
     int moveSpeed; //移动速度
+    public Hero(){
+
+    }
+    public Hero(String name,float hp){
+        this.name = name;
+        this.hp = hp;
+    }
 }
 
 class ADHero extends Hero{
