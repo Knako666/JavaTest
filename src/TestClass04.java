@@ -33,10 +33,10 @@ class Top extends Hero{
     //float topArmor
     //int topMoveSpeed
     public Top(String topName, float topHp, float topAmor, int topMoveSpeed){
-        name = topName;
-        hp = topHp;
-        armor = topAmor;
-        moveSpeed = topMoveSpeed;
+        this.name = topName;
+        this.hp = topHp;
+        this.armor = topAmor;
+        this.moveSpeed = topMoveSpeed;
     }
 }
 
