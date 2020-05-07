@@ -23,10 +23,24 @@ public class TestClass05 {
         //不仅如此，在这个构造方法中，调用这个构造方法
         //
         //public Hero(String name,float hp)
-
+        Mid yasuo = new Mid("疾风剑豪",615,30.2f,330);
+        System.out.println(yasuo.name+"血量是："+yasuo.hp+"\t护甲为："+yasuo.armor+"\t移动速度为："+yasuo.moveSpeed);
+    }
+}
+class Mid extends Hero{
+    public Mid(){
 
     }
-    class Mid extends Hero{
-
+    public Mid(String name, float hp){
+        this.name = name;
+        this.hp = hp;
+        System.out.println("调用双参构造器");
+    }
+    public Mid(String name, float hp, float armor, int moveSpeed){
+        this(name,hp);
+        this.name = name;
+        this.hp = hp;
+        this.armor = armor;
+        this.moveSpeed = moveSpeed;
     }
 }
