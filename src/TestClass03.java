@@ -1,6 +1,6 @@
 /**
  * 类 和对象的练习--方法的重载
- * @author  HYT
+ * @author  HYT。
  */
 
 public class TestClass03 {
