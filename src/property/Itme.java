@@ -1,8 +1,34 @@
 package property;
 
 public class Itme{     //定义物品类
-    String name;       //定义属性： 名字
-    int price;      //定义属性： 价格
+    private String name;       //定义属性： 名字
+    private int price;      //定义属性： 价格
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+    private Itme(){
+
+    }
+    private static Itme itme ;
+    public static Itme getInstance(){
+        if(itme==null){
+            itme = new Itme();
+        }
+        return itme;
+    }
 }
 
 //练习：设计一个类Armor护甲
