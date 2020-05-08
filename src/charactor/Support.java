@@ -1,8 +1,9 @@
 package charactor;
 
-class Support extends Hero {
+class Support extends Hero implements Healer {
 
     int healHp;     //定义一个治疗效果的属性
+    @Override
     public void heal(){
         System.out.println(this.getName()+"为某个英雄提供了治疗");
     }
