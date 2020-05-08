@@ -42,15 +42,16 @@ public class Hero {
         this.moveSpeed = moveSpeed;
     }
 
-    public static void setHero(Hero hero) {
-        Hero.hero = hero;
+
+
+    public Hero(){
     }
 
-    private  Hero(){
-    }
-    private static Hero hero = new Hero();
-    public static Hero getInstance(){
-        return hero;
+    public Hero(String name, float hp, float armor, int moveSpeed){
+        this.name = name;
+        this.hp = hp;
+        this.armor = armor;
+        this.moveSpeed = moveSpeed;
     }
 }
 

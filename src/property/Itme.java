@@ -19,16 +19,9 @@ public class Itme{     //定义物品类
     public void setPrice(int price) {
         this.price = price;
     }
-    private Itme(){
+    public Itme(){
+    }
 
-    }
-    private static Itme itme ;
-    public static Itme getInstance(){
-        if(itme==null){
-            itme = new Itme();
-        }
-        return itme;
-    }
 }
 
 //练习：设计一个类Armor护甲

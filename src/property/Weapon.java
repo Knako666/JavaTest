@@ -1,6 +1,8 @@
 package property;
 
 public class Weapon extends Itme {  //  因为Weapon类继承Item类,所以Weapon类也有name和price属性
+    String name;
+    int price;
     int damage;     //定义属性：攻击力
     public Weapon(){
 
