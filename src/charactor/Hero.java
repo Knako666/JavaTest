@@ -53,9 +53,16 @@ public class Hero {
         this.armor = armor;
         this.moveSpeed = moveSpeed;
     }
+    //多态练习
     public void kill(Mortal m){
         m.die();
     }
+
+    //隐藏的练习
+    public static void battlewin(){
+        System.out.println("hero battle win");
+    }
+
     public static void main(String[] args){
         Hero garen = new Hero();
         garen.setName("盖伦");
