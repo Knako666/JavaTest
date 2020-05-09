@@ -22,13 +22,27 @@ public class Itme{     //定义物品类
     public Itme(){
     }
 
+    public void buy(){
+        System.out.println("购买");
+    }
+    public void effect(){
+        System.out.println("物品使用后，可以有效果");
+    }
+
+    public static void main(String[] args){
+        Itme i = new Itme();
+        i.effect();     //Item类的方法
+
+        LifePotion lp = new LifePotion();
+        lp.effect();        //LifePotion类中重写父类的方法
+
+        //练习：设计一个类MagicPotion 蓝瓶，继承Item, 重写effect方法
+        //并输出 “蓝瓶使用后，可以回魔法”
+        MagicPotion mp = new MagicPotion();
+        mp.effect();
+    }
+
 }
 
-//练习：设计一个类Armor护甲
-//继承Item类，并且额外提供一个属性ac: 护甲等级 int类型
-//
-//实例化出两件护甲
-//名称 价格 护甲等级
-//布甲 300 15
-//锁子甲 500 40
+
 
