@@ -53,5 +53,21 @@ public class Hero {
         this.armor = armor;
         this.moveSpeed = moveSpeed;
     }
+    public void kill(Mortal m){
+        m.die();
+    }
+    public static void main(String[] args){
+        Hero garen = new Hero();
+        garen.setName("盖伦");
+        ADHero vn = new ADHero();
+        vn.setName("VN");
+        APHero fatiao = new APHero();
+        fatiao.setName("发条魔灵");
+        ADAPHero ez = new ADAPHero();
+        ez.setName("伊泽瑞尔");
+        garen.kill(vn);
+        garen.kill(fatiao);
+        garen.kill(ez);
+    }
 }
 

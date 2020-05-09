@@ -2,7 +2,7 @@ package charactor;
 
 //所以，实现了AD这个接口，就必须提供AD接口中声明的方法physicAttack()
 //实现在语法上使用关键字 implements
-public class ADHero extends Hero implements AD {
+public class ADHero extends Hero implements AD,Mortal {
     public void attack(){
      System.out.println(this.getName()+"进行了一次攻击，但不知道目标是谁");
     }
@@ -23,9 +23,13 @@ public class ADHero extends Hero implements AD {
     }
 
     //进行物理攻击
-    @Override
+@Override
     public void physicAttack(){
         System.out.println("进行物理攻击");
+    }
+@Override
+    public void die(){
+    System.out.println(this.getName()+"死亡");
     }
 }
 
