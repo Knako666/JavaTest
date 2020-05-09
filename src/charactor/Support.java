@@ -1,7 +1,9 @@
 package charactor;
 
 class Support extends Hero implements Healer {
-
+    public Support(){
+        super("");
+    }
     int healHp;     //定义一个治疗效果的属性
     @Override
     public void heal(){

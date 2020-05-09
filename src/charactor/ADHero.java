@@ -37,23 +37,31 @@ public class ADHero extends Hero implements AD,Mortal {
         System.out.println("ad hero battle win");
     }
 
+    public ADHero(){
+        super("");
+    }
+
     public static void main(String[] args){
-        Hero.battlewin();
-        ADHero.battlewin();
+//        Hero.battlewin();
+//        ADHero.battlewin();
+//
+//        //练习-隐藏：Hero h =new ADHero();
+//        //
+//        //
+//        //h.battleWin(); //battleWin是一个类方法
+//        //h是父类类型的引用
+//        //但是指向一个子类对象
+//        //h.battleWin(); 会调用父类的方法？还是子类的方法？
+//
+//        Hero h = new ADHero();
+//        h.battlewin();      //调用的依旧是父类的类方法
+//
+//        //当然，也不建议通过对象去调用类方法
+//        // 而应该直接通过类去调用类方法，从而规避理解上的歧义。
+        ADHero ad = new ADHero();
+        ad.setName("ad");
+        System.out.println(ad.getName());
 
-        //练习-隐藏：Hero h =new ADHero();
-        //
-        //
-        //h.battleWin(); //battleWin是一个类方法
-        //h是父类类型的引用
-        //但是指向一个子类对象
-        //h.battleWin(); 会调用父类的方法？还是子类的方法？
-
-        Hero h = new ADHero();
-        h.battlewin();      //调用的依旧是父类的类方法
-
-        //当然，也不建议通过对象去调用类方法
-        // 而应该直接通过类去调用类方法，从而规避理解上的歧义。
     }
 }
 
