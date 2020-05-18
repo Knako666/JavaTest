@@ -3,7 +3,7 @@ package NumberAndString;
 /**
  * 寻找素数
  * @author  HYT
- *
+ *g
  */
 public class FindPrime {
     final int max = 10000001;
