@@ -67,7 +67,7 @@ public class TestNumber03 {
 //        }
 //        System.out.println(count);
 
-        //埃氏筛法
+        //埃氏筛法d
         System.out.println("###############");
         int max = 10000*1000;
         int count1 = 0 ;
