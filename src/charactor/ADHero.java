@@ -41,6 +41,7 @@ public class ADHero extends Hero implements AD,Mortal {
         super("");
     }
 
+
     public static void main(String[] args){
 //        Hero.battlewin();
 //        ADHero.battlewin();

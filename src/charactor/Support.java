@@ -17,4 +17,8 @@ class Support extends Hero implements Healer {
     public void heal(Hero h, int hp){    //为指定的英雄加了hp的血
         System.out.println(this.getName()+"为"+h.getName()+"提供了"+hp+"的治疗效果");
     }
+
+    public void attack(){
+        System.out.println("..");
+    }
 }

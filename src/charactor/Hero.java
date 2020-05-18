@@ -1,6 +1,6 @@
 package charactor;
 
-public class Hero {
+public abstract class Hero {
 
     private String name; //姓名
 
@@ -49,6 +49,7 @@ public class Hero {
 //    public Hero(){
 //    }
 
+
     public Hero(String name, float hp, float armor, int moveSpeed){
         this.name = name;
         this.hp = hp;
@@ -64,6 +65,7 @@ public class Hero {
     public static void battlewin(){
         System.out.println("hero battle win");
     }
+    public abstract void attack();
 
     public static void main(String[] args){
 
