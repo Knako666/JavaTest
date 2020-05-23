@@ -147,9 +147,10 @@ public class TestNumber06 {
             for(int i = 0; i<elementString.length; i++) {
                 char r = (char) (start + Math.random() * (end - start));
                 Character r1 = r;       //将r进行自动装箱变为Character才能使用.isDigit()和.isLetter()方法
-                if (Character.isDigit(r1) || Character.isLetter(r1)) {//  判断是否为字符或数字
-                    elementString[i] = r;
+                if (!Character.isLetterOrDigit(r1)) {//  判断是否为字符或数字
+                    continue;
                 }
+                elementString[i] = r;
                 String temp = new String(elementString);
                 sortString[j] = temp;
             }
@@ -241,10 +242,10 @@ public class TestNumber06 {
         for(short i ='0'; i <= '9'; i++){
             pool += (char)i;
         }
-        for(short i = 'a'; i <= 'z'; i++){
+        for(short i = 'A'; i <= 'Z'; i++){
             pool += (char)i;
         }
-        for(short i = 'A'; i <= 'Z'; i++){
+        for(short i = 'a'; i <= 'z'; i++){
             pool += (char)i;
         }
         char cs[] = new char[length];
@@ -263,21 +264,20 @@ public class TestNumber06 {
     }
 
     public static void generatePsw(char[] guessPsw, int index, String psw){
-        if(found)   //定义递归头
+        if(found)
             return;
         for(short i = '0'; i <= 'z' ; i++){
             char c = (char)i;
             if(!Character.isLetterOrDigit(c))
                 continue;
             guessPsw[index] = c;
-            if(index != guessPsw.length-1){     //判定index（已猜测的密码位数）是否已经是最后一位
-                generatePsw(guessPsw, index +1, psw);
+            if(index != guessPsw.length-1){     //判定index（已猜测的密码位数）是否已经是最后一位,设置递归结束条件
+                generatePsw(guessPsw, index +1, psw);   //递归调用
             } else {
                 String guess = new String(guessPsw);
                 if(guess.equals(psw)){
                     System.out.format("找到了，密码是：%s%n",guess);
                     found = true;       //此处将判定值设置为正确即可返回函数
-
                 }
             }
         }
