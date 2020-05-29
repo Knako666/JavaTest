@@ -1,7 +1,7 @@
 package NumberAndString;
 
 /**
- * 寻找素数
+ * 寻找1000万以内的素数
  * @author  HYT
  *g
  */
